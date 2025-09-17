@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yuvaraju Ganasala — Resume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --accent-light:#ff6a00;
+      --accent-dark:#ff9800;
+      --bg-light:#ffffff;
+      --bg-dark:#121212;
+      --text-light:#0b0b0b;
+      --text-dark:#eaeaea;
+      --muted-light:#6b6b6b;
+      --muted-dark:#bbbbbb;
+      --card-light:#f9f9f9;
+      --card-dark:#1f1f1f;
+      font-family: 'Inter', system-ui, Arial;
+    }
+    body {margin:0;line-height:1.45;transition:background 0.3s,color 0.3s}
+    body.light {background:var(--bg-light);color:var(--text-light)}
+    body.dark {background:var(--bg-dark);color:var(--text-dark)}
+    .container {max-width:1000px;margin:32px auto;padding:24px}
+    header {display:flex;gap:24px;align-items:center}
+    .portrait {width:110px;height:110px;border-radius:16px;
+      background:linear-gradient(135deg,var(--accent-light),var(--accent-dark));
+      display:flex;align-items:center;justify-content:center;
+      color:#fff;font-weight:700;font-size:28px}
+    h1 {margin:0;font-size:28px}
+    p.lead {margin:6px 0 0}
+    .top {display:flex;gap:28px;margin-top:18px}
+    .card {padding:18px;border-radius:12px;transition:background 0.3s,border 0.3s}
+    body.light .card {background:var(--card-light);border:1px solid #eaeaea}
+    body.dark .card {background:var(--card-dark);border:1px solid #333}
+    aside {width:320px}
+    main {flex:1}
+    .section {margin-bottom:18px}
+    .section h2 {margin:0 0 10px;font-size:16px;color:var(--accent-light)}
+    body.dark .section h2 {color:var(--accent-dark)}
+    .skill-list {display:flex;flex-wrap:wrap;gap:8px}
+    .skill {padding:8px 10px;border-radius:8px;font-size:13px}
+    body.light .skill {border:1px solid #eee;background:#fff;color:var(--text-light)}
+    body.dark .skill {border:1px solid #444;background:#2a2a2a;color:var(--text-dark)}
+    .card-item {padding:12px;border-radius:10px;margin-bottom:10px}
+    body.light .card-item {border:1px solid #f0f0f0;background:#fff}
+    body.dark .card-item {border:1px solid #444;background:#1a1a1a}
+    .job-meta {font-size:13px}
+    .download {display:inline-block;padding:10px 14px;border-radius:10px;
+      background:var(--accent-light);color:#fff;text-decoration:none;font-weight:600}
+    body.dark .download {background:var(--accent-dark)}
+    .theme-toggle {margin-left:10px;padding:6px 12px;border-radius:8px;
+      cursor:pointer;border:none}
+    body.light .theme-toggle {background:var(--accent-light);color:#fff}
+    body.dark .theme-toggle {background:var(--accent-dark);color:#fff}
+    footer {margin-top:28px;text-align:center;font-size:13px}
+    @media (max-width:900px) {.top{flex-direction:column} aside{width:100%}}
+  </style>
+</head>
+<body class="light">
+  <div class="container">
+    <header>
+      <div class="portrait">YG</div>
+      <div>
+        <h1>Yuvaraju Ganasala</h1>
+        <p class="lead">B.Sc. Computer Science — Final Year · Web Developer · Designer</p>
+        <div style="margin-top:10px;display:flex;gap:10px;align-items:center">
+          <a href="Yuvaraj Resume.pdf" class="download" download>Download PDF Resume</a>
+          <button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
+        </div>
+      </div>
+    </header>
+
+    <div class="top" style="margin-top:22px">
+      <!-- Sidebar -->
+      <aside>
+        <div class="card">
+          <div class="section">
+            <h2>Contact</h2>
+            <div>Email: <strong>youremail@example.com</strong></div>
+            <div>Phone: <strong>+91 9XXXXXXXXX</strong></div>
+            <div>Location: <strong>India</strong></div>
+          </div>
+
+          <div class="section">
+            <h2>Skills</h2>
+            <div class="skill-list">
+              <div class="skill">HTML</div>
+              <div class="skill">CSS</div>
+              <div class="skill">JavaScript</div>
+              <div class="skill">React</div>
+              <div class="skill">Node.js</div>
+              <div class="skill">Responsive Design</div>
+              <div class="skill">Figma</div>
+            </div>
+          </div>
+
+          <div class="section">
+            <h2>Education</h2>
+            <div class="card-item">
+              <strong>B.Sc. Computer Science</strong>
+              <div class="job-meta">Final Year — [Your College Name]</div>
+            </div>
+          </div>
+
+          <div class="section">
+            <h2>Languages</h2>
+            <div>English — Professional</div>
+            <div>Telugu — Native</div>
+            <div>Hindi — Conversational</div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Main content -->
+      <main>
+        <div class="card">
+          <div class="section">
